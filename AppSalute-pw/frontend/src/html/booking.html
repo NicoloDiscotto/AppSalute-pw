@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenotazione Visita</title>
+
+    <link rel="icon" href="/public/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/index">
+                <h1>AppSalute</h1>
+            </a>
+
+            <div class="user-controls">
+                <button id="myBookingsButton">Le mie Prenotazioni</button>
+                <button id="logoutButton">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sezione per la prenotazione -->
+        <section id="booking-section">
+            <h2>Scegli una data e fascia oraria per la visita</h2>
+        </section>
+
+        <!-- Sezione calendario -->
+        <div id="calendar-container">
+            <label for="calendar">Seleziona la data:</label>
+            <input type="date" id="calendar">
+        </div>
+
+        <!-- Sezione fascia oraria -->
+        <div id="time-slots-container">
+            <h3>Fasce orarie disponibili</h3>
+            <div id="time-slots">
+                <!-- Le fasce orarie verranno generate dinamicamente da booking.js -->
+            </div>
+        </div>
+
+        <button id="bookButton" disabled>Prenota Visita</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="booking.js"></script>
+
+</body>
+
+</html>

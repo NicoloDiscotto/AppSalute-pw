@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le mie Prenotazioni</title>
+
+    <link rel="icon" href="/public/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/index">
+                <h1>AppSalute</h1>
+            </a>
+            <div class="user-controls">
+                <button id="logoutButton">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sezione principale dove verranno caricate le prenotazioni -->
+    <main id="bookings-list">
+        <!-- Messaggio di default se non ci sono prenotazioni -->
+        <p id="no-bookings-message">Non hai prenotazioni attive.</p>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="mybooking.js"></script>
+
+</body>
+
+</html>
